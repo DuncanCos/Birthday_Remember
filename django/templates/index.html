@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <a href="/acceuil/0"><h1>hello you</h1></a>
+    <a href="/showList/"><h1>see list</h1></a>
+    <p>who are you ?</p>
+          {{ mot }}
+    <p><a href="/new/">go</a></p>
+
+    <form action="/new/" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit">
+  </form>
+
+<p>
+  and
+  {{wo}} {{wa}} is in reality {{we}}
+</p>
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <a href="/acceuil/0"><h1>hello you</h1></a>
+
+
+<p>
+  there is:<br />
+  {% for is in name %}
+    {{is.name}} <button onclick="window.location.href = '/showList/{{is.id}}';"> delete </button>
+    <br />
+  {% endfor %}
+</p>
+  </body>
+
+</html>
