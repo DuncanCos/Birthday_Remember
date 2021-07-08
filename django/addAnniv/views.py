@@ -13,20 +13,19 @@ def index (request):
         if form.is_valid():
             ls=donnee()
             name= form.cleaned_data['name']
-            surname= form.cleaned_data['surname']
-            pseudo= form.cleaned_data['pseudo']
+            birthday= form.cleaned_data['birthday']
 
             #yes=donnee.objects.get(pk=5)
             #print(yes.name)
 
             #yes.delete()
             ls.name=name
-            ls.pseudo=pseudo
+            ls.birthday=birthday
             ls.save()
-            return render(request, 'index.html' ,{'form': form,'wo':name,'wa': surname,'we':pseudo})
+            return render(request, 'index.html' ,{'form': form,'wo':name,'we':birthday})
             #return render(request, 'index.html' ,{'form': form,'wo':test})
     else:
         form = NameForm()
 
-    re = "nobody"
+    re = "never"
     return render(request, 'index.html' ,{'form': form,'wo':test, 'we': re})
