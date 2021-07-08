@@ -4,4 +4,4 @@ to run the project you need to:
 pip install django
 python manage.py runserver
 
-the acceuill page is in http://localhost/acceuil/0
+the acceuill page is in http://localhost:8000/acceuil/0
