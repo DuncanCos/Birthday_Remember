@@ -1,0 +1,54 @@
+
+body{
+    margin: 0;
+    background: #a7a7a7;
+    font-weight: 800;
+}
+
+.TopBar{
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+header{
+    background: #4b3eff;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+nav {
+    float: left;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 80;
+    padding-top: 25;
+    padding-bottom: 15;
+  
+    position: relative;
+  }
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  .mot{
+    padding-top: 5%;
+    margin-left: 50;
+    font-size: 100%;
+  }
+  
