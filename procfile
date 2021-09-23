@@ -1,1 +1,1 @@
-
+web: gunicorn SiteTestDjango.wsgi --log-file -
